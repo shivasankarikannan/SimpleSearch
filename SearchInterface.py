@@ -49,7 +49,7 @@ class SearchInterface:
             elif cmd == 'q' or cmd == 'quit':
                 exit(0)
             elif cmd == 's' or cmd == 'search':
-                print('Select 1) Users 2) Tickets 3) Organizations') #make this more robus with config
+                print('Select a number from 1) Users 2) Tickets 3) Organizations') #make this more robus with config
                 try:
                     data_type = int(input())
                 except ValueError as ve:
@@ -64,10 +64,10 @@ class SearchInterface:
                 value = input()
                 value = value.strip()
                 self.print_search(data_type, key, value)
-                print('Please\n\t\tType search or s to search\n\t\tType help or h to view searchable fields\n\t\tType quit or q to exit')
             else:
                 print('Please\n\t\tType search or s to search\n\t\tType help or h to view searchable fields\n\t\tType quit or q to exit')
 
+            print('Please\n\t\tType search or s to search\n\t\tType help or h to view searchable fields\n\t\tType quit or q to exit')
             cmd = input()
 
 if __name__ == '__main__':

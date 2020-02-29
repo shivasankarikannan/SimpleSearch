@@ -9,6 +9,8 @@ Installation instructions:
 4. python SearchInterface.py
 This will start a commandline promt and you can start interacting with the system.
 
+If you wish to add more data types and files, please modify config.py with appropriate data files.
+
 Future improvements:
   1. The current implementation loads al the data to memory to perform search. Setting up a solr based search system would be an ideal solution to this problem. ElasticSearch has been a very successful Solr based system in market today. Indexing the data in ElasticSearch will enable us to search partial terms, range queries on datetime columns and also lets us use sql type complex queries. But this system is not efficient when joining different indices but support parent child relationship in documents.
   2. We could create sql tables based on the data available and perform any kind of search operation on fields. This storage option will be useful and faster to perform simple joins and also supports date range queries. But it can be very slow for partial queries on search values

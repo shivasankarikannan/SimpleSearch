@@ -1,8 +1,7 @@
 # SimpleSearch
 This repository contains a simple direct match based search system. The entire implemetation is in python. 
-Requirement:
-Python > 3.5
-No extra packages needed to be installed
+Requirement: Python > 3.5
+No extra packages needed to be installed. 
 Installation instructions:
 1. Clone this git repo or download it as zip
 2. Unzip the folder if downloaded as zip
